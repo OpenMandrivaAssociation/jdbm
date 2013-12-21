@@ -1,0 +1,12 @@
+Index: jdbm-1.0/src/examples/FamousPeople.java
+===================================================================
+--- jdbm-1.0.orig/src/examples/FamousPeople.java
++++ jdbm-1.0/src/examples/FamousPeople.java
+@@ -30,7 +30,6 @@ public class FamousPeople {
+           "Picasso, Pablo",
+           "Stallman, Richard",
+           "Fort, Paul",
+-          "Søndergaard, Ole",
+           "Schwarzenegger, Arnold",
+           "Dulkinys, Susanna" };
+ 
