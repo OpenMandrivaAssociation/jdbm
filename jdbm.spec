@@ -1,4 +1,4 @@
-%_javapackages_macros
+%{?_javapackages_macros:%_javapackages_macros}
 # Copyright (c) 2000-2009, JPackage Project
 # All rights reserved.
 #
@@ -31,7 +31,7 @@
 
 Name:           jdbm
 Version:        1.0
-Release:        6.0%{?dist}
+Release:        6.0%{dist}
 Summary:        A transactional persistence engine for Java
 
 
@@ -111,3 +111,40 @@ cp -pr build/doc/javadoc/* $RPM_BUILD_ROOT%{_javadocdir}/%{name}
 
 %files javadoc
 %doc %{_javadocdir}/%{name}
+
+%changelog
+* Sat Oct 19 2013 Matt Spaulding <mspaulding06@gmail.com> - 1.0-6
+- Add original license and changelog for spec file
+
+* Fri Oct 11 2013 Matt Spaulding <mspaulding06@gmail.com> - 1.0-5
+- Updated license to reflect license included with source (RHBZ#998506)
+
+* Sat Aug 03 2013 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 1.0-4
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_20_Mass_Rebuild
+
+* Thu Feb 14 2013 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 1.0-3
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_19_Mass_Rebuild
+
+* Fri Aug 03 2012 Matt Spaulding <mspaulding06@gmail.com> 1.0-2
+- Added missing jpackage-utils Require
+- Moved test run to check section
+- Now using source code from cvs
+
+* Fri Jul 27 2012 Matt Spaulding <mspaulding06@gmail.com> 1.0-1
+- Initial package build
+
+* Fri Feb 06 2009 Ralph Apel <r.apel@r-apel.de> 0:1.0-2.jpp5
+- Rebuild for JPP-5 according to current best practices
+
+* Wed Apr 04 2007 Fernando Nasser <fnasser@redhat.com> 0:1.0-1jpp
+- Upgrade to 1.0
+
+* Fri May 26 2006 Fernando Nasser <fnasser@redhat.com> 0:0.20-2jpp
+- First JPP 1.7 build
+
+* Thu Feb 17 2005 Ralph Apel <r.apel at r-apel.de> 0:0.20-1jpp
+- Upgrade to 0.20 from HEAD
+
+* Wed Feb 09 2005 Ralph Apel <r.apel at r-apel.de> 0:0.13-1jpp
+- First release
+
