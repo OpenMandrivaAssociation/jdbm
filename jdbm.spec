@@ -31,7 +31,7 @@
 
 Name:           jdbm
 Version:        1.0
-Release:        6.0%{dist}
+Release:        6.0%{?dist}
 Summary:        A transactional persistence engine for Java
 
 
